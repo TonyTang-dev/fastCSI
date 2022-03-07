@@ -1,0 +1,150 @@
+{
+	"easycom": {
+		"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue"
+	},
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/login_regist/login/login",
+			"style": {
+				"navigationBarTitleText": "技术语音吧"
+			}
+		},
+		{
+			"path": "pages/navigate_page/Home/home",
+			"style": {
+				"navigationBarTitleText": "技术语音吧",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "退出",
+								"color":"#2B85E4",
+								// "fontSrc": "/static/1.png",
+								"fontSize": "12px",
+								"float": "left"
+							},
+							{
+								"text": "发布",
+								"color":"#2B85E4",
+								// "fontSrc": "/static/post.png",
+								"fontSize": "12px",
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
+		}
+	    ,{
+            "path" : "pages/test/test",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/login_regist/regist/regist",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/allArticle/allArticle",
+            "style" : {
+				"app-plus": {
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "发布",
+								"color":"#2B85E4",
+								// "fontSrc": "/static/post.png",
+								"fontSize": "12px",
+								"float":"right"
+							}
+						]
+					}
+				}
+			}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/mine",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/myComment/myComment",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/myVoice/myVoice",
+            "style" : {
+				"backgroundColor":"#53ACD5"
+			}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/mySettings/mySettings",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/login_regist/login/forgetPassword/forgetPassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/mySettings/basicInfo/basicInfo",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/mySettings/modifyPassword/modifyPassword",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/mySettings/modifyPotrait/modifyPotrait",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/userManage/userManage",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/Home/newArticle/newArticle",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/Home/passageDetails/passageDetails",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/myComment/editComment/editComment",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/navigate_page/mine/userManage/editUserInfor/editUserInfor",
+            "style" : {}
+        }
+    ],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "技术语音吧",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+	    "color": "#909399",
+	    "selectedColor": "#303133",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/navigate_page/Home/home",
+	        "iconPath": "static/home2.png",
+	        "selectedIconPath": "static/home1.png",
+	        "text": "我的文章"
+	    },
+		{
+		    "pagePath": "pages/navigate_page/allArticle/allArticle",
+			// "pagePath":"pages/test/test",
+		    "iconPath": "static/allArticle.png",
+		    "selectedIconPath": "static/allArticle-Select.png",
+		    "text": "所有文章"
+		},
+		{
+		    "pagePath": "pages/navigate_page/mine/mine",
+		    "iconPath": "static/mine1.png",
+		    "selectedIconPath": "static/mine2.png",
+		    "text": "我的"
+		}]
+	}
+}
